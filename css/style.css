@@ -90,7 +90,26 @@ a {
 
 /* } */ 
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 1400px){
+
+    
+}
+
+ @media (max-width: 1024px){
+
+    .topoDiagonal{
+        padding-bottom: 150px;
+    }
+
+    p{
+
+        font-size: 15pt;
+
+    }
+
+}
+
+@media (max-width: 800px){
 
     *{
 
@@ -98,7 +117,6 @@ a {
         padding: 0px;
 
     }
-
 
     ::-webkit-scrollbar {
         height: 5px;
@@ -113,7 +131,7 @@ a {
 
     .container{
 
-        height: 465vh;
+        height: 455vh;
 
     }
 
@@ -157,7 +175,45 @@ a {
 
         min-width: 100vw;
         max-width: 100vw;
+        overflow-x: visible;
+        overflow-y: hidden;
 
+    }
+
+    .listaServicos{
+
+        list-style: none;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+
+    }
+
+    #seta::after{
+
+        content: "->";
+        position: absolute;
+        top: 70px;
+        right: 30px;
+        animation: animacaoSeta 1s infinite;
+
+    }
+
+    @keyframes animacaoSeta {
+
+        0%,100%{
+
+            transform: translateX(0px);
+
+        }
+        50%{
+
+            transform: translateX(30px);
+
+        }
+        
+        
     }
 
     .servico1{
@@ -296,6 +352,76 @@ a {
 
 }
 
+@media (max-width: 700px){
+
+    .divBotao{
+
+        margin-top: 60px;
+
+    }
+
+    .topoDiagonal{
+
+        padding-bottom: 0;
+        
+    }
+    
+}
+
+@media (max-width: 600px){
+
+    .container{
+
+        height: 590vh;
+
+    }
+
+    .topoDiagonal{
+        height: 30vh;
+    }
+
+    .introducaoServicos{
+
+        margin-top: 60px;
+
+    }
+
+    .servico1{
+
+        margin-top: 230px;
+    }
+    .servico2{
+
+        margin-top: 440px;
+    }
+    .servico3{
+
+        margin-top: 690px;
+    }
+    .contato{
+
+        margin-top: 1000px;
+    }
+
+    .divBotao{
+
+        margin-top: 145px;
+
+    }
+
+    footer{
+
+        margin-top: 1140px;
+
+    }
+
+
+}
+
+
+
+
+
 .container{
 
     /* display: flex;
@@ -305,7 +431,8 @@ a {
     overflow-x: hidden;
     width: 100vw;
      */
-
+     overflow-y: hidden;
+     
 }
 
 .topoDiagonal {
@@ -437,6 +564,16 @@ li{
         transform: translate3d(0, 010vh,0);
 
     }
+
+}
+
+.listaServicos{
+
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
 
 }
 
@@ -716,8 +853,6 @@ footer{
 
 .github{
 
-    /* background-color: red; */
     border-radius: 50%;
-    /* padding: 3px; */
 
 }
